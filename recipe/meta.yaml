@@ -1,5 +1,5 @@
 {% set name = "exoplanet" %}
-{% set version = "0.2.4" %}
+{% set version = "0.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 31acdedec7d187b2191f02f63f906197cf59c0009d217a0a12ec4dc10e3738e2
+  sha256: d0bc70edd1ffeca0b8d9945ab3fea9d0328db9469e776c45a7956b0b29ca2fc4
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install .  --no-deps -vv"
+  script: {{ PYTHON }} -m pip install .  --no-deps -vv
 
 requirements:
   host:
@@ -36,7 +36,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Fast and scalable MCMC for all your exoplanet needs'
+  summary: Fast and scalable MCMC for all your exoplanet needs
   description: |
     exoplanet is a toolkit for probabilistic modeling of transit and/or radial
     velocity observations of exoplanets and other astronomical time series using
