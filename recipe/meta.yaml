@@ -1,5 +1,5 @@
 {% set name = "exoplanet" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5e019d1721767b1d2c91137c18a7dc994a95350947f5cf457e7df52772e1fd2b
+  sha256: 7f91c5d6a01c4f48e5a0e9b9ba72e1f52cbe998bd08140bc38b4d0d321f5d1cd
 
 build:
   number: 0
