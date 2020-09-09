@@ -5,7 +5,7 @@ Home: https://exoplanet.dfm.io
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Fast and scalable MCMC for all your exoplanet needs
 
