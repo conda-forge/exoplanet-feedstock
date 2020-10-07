@@ -19,7 +19,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - python >=3.6
+    - python
     - numpy >=1.30.0
     - pybind11 >=2.4
     - setuptools >=0.7.0
