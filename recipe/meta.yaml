@@ -20,14 +20,14 @@ requirements:
   host:
     - pip
     - python
-    - numpy >=1.30.0
+    - numpy
     - pybind11 >=2.4
     - setuptools >=0.7.0
     - setuptools_scm >=1.15
   run:
     - python
     - theano >=1.0.4
-    - numpy >=1.13.0
+    - {{ pin_compatible('numpy') }}
     - pymc3 >=3.5
     - astropy >=3.1
     - pymc3-ext >=0.0.1
