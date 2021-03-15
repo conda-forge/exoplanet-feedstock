@@ -20,13 +20,13 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - python >=3.6
+    - python
     - numpy
     - pybind11 >=2.4
     - setuptools >=0.7.0
     - setuptools_scm >=1.15
   run:
-    - python >= 3.6
+    - python
     - {{ pin_compatible('numpy') }}
     - pymc3 >=3.9
     - astropy >=3.1
