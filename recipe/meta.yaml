@@ -20,25 +20,25 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
-    - python
+    - python >=3.6
     - numpy
     - pybind11 >=2.4
     - setuptools >=0.7.0
     - setuptools_scm >=1.15
   run:
-    - python
-    - theano >=1.0.4
+    - python >= 3.6
     - {{ pin_compatible('numpy') }}
-    - pymc3 >=3.8
+    - pymc3 >=3.9
     - astropy >=3.1
-    - pymc3-ext >=0.0.1
+    - pymc3-ext >=0.1.0
+    - aesara-theano-fallback >=0.0.2
 
 test:
   imports:
     - exoplanet
 
 about:
-  home: https://exoplanet.dfm.io
+  home: https://docs.exoplanet.codes
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -50,8 +50,8 @@ about:
     inference engine that scales well to problems with a large number of
     parameters. exoplanet extends PyMC3's language to support many of the custom
     functions and distributions required when fitting exoplanet datasets.
-  doc_url: https://exoplanet.dfm.io
-  dev_url: https://github.com/dfm/exoplanet
+  doc_url: https://docs.exoplanet.codes
+  dev_url: https://github.com/exoplanet-dev/exoplanet
 
 extra:
   recipe-maintainers:
