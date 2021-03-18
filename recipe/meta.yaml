@@ -1,5 +1,5 @@
 {% set name = "exoplanet" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 821789b6f26eee978e8757a0074377d53e4c9795ca8afd1c598f1f3cf29bf455
+  sha256: 543c20a7209f3ada38fb3f4db1068261adcc024bc434630728eacc47126ee1d3
 
 build:
   number: 0
@@ -23,22 +23,21 @@ requirements:
     - python
     - numpy
     - pybind11 >=2.4
-    - setuptools >=0.7.0
+    - setuptools >=40.6.0
     - setuptools_scm >=1.15
   run:
     - python
-    - theano >=1.0.4
     - {{ pin_compatible('numpy') }}
-    - pymc3 >=3.8
+    - pymc3 >=3.9
     - astropy >=3.1
-    - pymc3-ext >=0.0.1
+    - pymc3-ext >=0.1.0
 
 test:
   imports:
     - exoplanet
 
 about:
-  home: https://exoplanet.dfm.io
+  home: https://docs.exoplanet.codes
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -50,8 +49,8 @@ about:
     inference engine that scales well to problems with a large number of
     parameters. exoplanet extends PyMC3's language to support many of the custom
     functions and distributions required when fitting exoplanet datasets.
-  doc_url: https://exoplanet.dfm.io
-  dev_url: https://github.com/dfm/exoplanet
+  doc_url: https://docs.exoplanet.codes
+  dev_url: https://github.com/exoplanet-dev/exoplanet
 
 extra:
   recipe-maintainers:
