@@ -23,7 +23,7 @@ requirements:
     - python
     - numpy
     - pybind11 >=2.4
-    - setuptools >=0.7.0
+    - setuptools >=40.6.0
     - setuptools_scm >=1.15
   run:
     - python
