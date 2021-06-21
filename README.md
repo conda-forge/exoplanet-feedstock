@@ -203,5 +203,6 @@ Feedstock Maintainers
 =====================
 
 * [@dfm](https://github.com/dfm/)
+* [@mwcraig](https://github.com/mwcraig/)
 * [@rodluger](https://github.com/rodluger/)
 
