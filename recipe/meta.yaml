@@ -10,29 +10,23 @@ source:
   sha256: f3f64dd3314e99f5eb29796813476d94c4cf709f279c6a8a8b620d6712aeb171
 
 build:
-  number: 1
-  skip: true  # [py<37]
+  number: 2
+  noarch: python
   script: {{ PYTHON }} -m pip install .  --no-deps -vv
 
 requirements:
-  build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
   host:
     - pip
     - python
     - setuptools >=40.6.0
+    - wheel
     - setuptools_scm >=1.15
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - exoplanet-core >=0.1
     - pymc3 >=3.9
     - astropy >=3.1
     - aesara-theano-fallback >=0.0.2
-    - pymc3-ext >=0.1.0
 
 test:
   imports:
