@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
     - setuptools >=40.6.0
     - wheel
     - setuptools_scm >=1.15
   run:
-    - python
+    - python >=3.8
     - exoplanet-core >=0.1
     - pymc3 >=3.9
     - astropy >=3.1
