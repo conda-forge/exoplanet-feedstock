@@ -1,5 +1,5 @@
 {% set name = "exoplanet" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f3f64dd3314e99f5eb29796813476d94c4cf709f279c6a8a8b620d6712aeb171
+  sha256: 71a70e9d2427f7e49437e2c466cd81bacb6cdeb8c901cd8ee78f9ad09ab141b4
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install .  --no-deps -vv
 
